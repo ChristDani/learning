@@ -1,0 +1,2 @@
+este es un cuarto archivo creado desde la funcion "writeFileSync" y una variable. 
+contenido agregado con 'flag: "a"'

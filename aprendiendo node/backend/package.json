@@ -1,0 +1,9 @@
+{
+  "type": "module",
+  "dependencies": {
+    "colors": "^1.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

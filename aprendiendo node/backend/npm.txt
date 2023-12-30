@@ -1,0 +1,18 @@
+Entramos en el sitio web "npmjs.com"
+Ahi encontraremos infinidad de modulos que podremos adicionar a nuestros proyectos, como ejemplo tenemos al modulo "colors" este nos permite cambiar los colores de texto en la consola.
+
+haremos algunas pruebas en el archivo "cli.js"
+
+En consola ejecutamos el comando de "npm init" posteriormente a esto el servidor nos mostrará información a cerca de él, como que dependencias y modulos que utiliza, quien lo creo, su version, una descripcion, que archivo de entrada usará que dejaremos por defecto "index.js", un comando de testeo, un repositorio de git, palabras claves para encontrar el proyecto, autor, una licencia pero podemos usar (dejamos la de por defecto). || con esto indicaremos al proyecto que el codigo depende de el modulo creado al finalizar llamado "package.json". Este archivo nos servirá para la produccion de nuestro codigo en algun servidor en la nube ya que indicará que modulos se necesitan para ejecutar el codigo. || adicionalmente a esto en el archivo "package.jason" podemos editar la parte de scripts quitando el texto de test y poniendo un codigo de inicio donde podremos asignar cualquier tipo de codigo, mayormente es usado para almacenar comando de inicio del servidor "scripts": { "start": "node index.js" } || una vez editado el archivo ahora podremos usar "npm start" para ejecutar nuestro codigo. si creamos una funcion con nombre diferente a los ya establecidos por npm como por ejemplo "ejecutar" debemos usar el comando de la siguiente manera "npm run ejecutar".
+
+cuando instalamos un modulo con npm, node lo toma como dependencia del proyecto para su ejecucion, pero si este modulo tan solo es para tener una mejor experiencia de desarrollo debemos agregar "-D" al final de "npm i module" para indicarle a node que este modulo es un dvdependency, el comando quedaria de la siguiente manera "npm i module -D", en este ejemplo hablamos del modulo nodemon ya que este modulo actualiza la terminal con cada actualizacion de codigo que demos, evitandonos tener que reiniciar las ejecuciones del proyecto.
+
+para instalar un modulo de manera global y este disponible para cualquier proyecto dentro del dispositivo debemos agregar el comando "-g" que significa que el modulo estará disponible de manera global, a diferencia de nuestro ejemplo anterior. Un ejmplo de uso de este comando sería "npm i nodemon -g".
+
+para eliminar modulos manejamos el comando de "remove" un ejemplo sería "npm remove nodemon" adicionalmente a eso le agregamos el comando con el cual fue instalado, podria ser: "npm remove nodemon" || "npm remove nodemon -D" || "npm remove nodemon -g"
+
+con npx podemos instalar y ejecutar modulos simultaneamente, sin necesidad de guardarlos en el proyecto, como por ejemplo el modulo "cowsay" || "npx cowsay hola".
+
+"npx" instala, ejecuta y elimina.
+
+si utilizamos el comando "npm init -y" iniciamos el proyecto de manera rápida y node nos crea un archivo de "package.json" con datos en default.
