@@ -1,0 +1,9 @@
+<%- include('partials/header'); %>
+<h1>Post</h1>
+<% for(let i = 0; i < post.length; i++) { %>
+    <article>
+        <h1><%= post[i].title %></h1>
+        <p><%= post[i].body %></p>
+    </article>
+<% } %>
+<%- include('partials/footer'); %>
